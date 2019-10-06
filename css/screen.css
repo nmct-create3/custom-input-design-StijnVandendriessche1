@@ -91,6 +91,8 @@
         --global-color-alpha-white: #35374D;
         --global-color-alpha-black: white;
         --global-input-color: var(--global-color-neutral-xx-dark);
+        --global-input-borderColor: var(--global-page-color);
+        --global-color-neutral-xxx-light: var(--global-page-color);
     }
 }
 
@@ -639,6 +641,7 @@ input::placeholder {
     -moz-appearance: none;
     appearance: none;
     width: 100%;
+    border-radius: var(--global-borderRadius);
     border: var(--input-borderWidth, var(--global-borderWidth)) solid var(--input-borderColor, var(--global-input-borderColor));
     background-color: var(--input-backgroundColor, var(--global-input-backgroundColor));
     color: var(--global-input-color);
@@ -649,6 +652,7 @@ input::placeholder {
     padding: calc(var(--global-baseline) * 1.5 - var(--global-borderWidth)) var(--global-whitespace-md);
     outline: none;
     transition: border var(--global-transition-timing-alpha);
+    ;
 }
 
 .c-input:hover {
@@ -658,8 +662,8 @@ input::placeholder {
 
 .c-input:focus,
 .c-input:active {
-    border-color: var(--global-color-alpha);
-    box-shadow: 0 0 0 3px var(--global-color-alpha-x-transparent);
+    border-color: blue;
+    box-shadow: 0 0 0 3px var(blue);
     background-color: var(--global-page-color);
 }
 
