@@ -93,6 +93,7 @@
         --global-input-color: var(--global-color-neutral-xx-dark);
         --global-input-borderColor: var(--global-page-color);
         --global-color-neutral-xxx-light: var(--global-page-color);
+        --global-color-neutral-xx-dark: var(--global-color-neutral);
     }
 }
 
@@ -662,8 +663,8 @@ input::placeholder {
 
 .c-input:focus,
 .c-input:active {
-    border-color: blue;
-    box-shadow: 0 0 0 3px var(blue);
+    border-color: var(--global-color-alpha-x-transparent);
+    box-shadow: 0 0 0 3px var(--global-color-alpha-x-transparent);
     background-color: var(--global-page-color);
 }
 
